@@ -8,37 +8,31 @@
 </head>
 <body>
 
-    <!-- Başlangıç ekranı -->
     <div id="welcome-screen">
         <h1>Selam Yağmur, Oyuna Hazır Mısın?</h1>
         <button id="start-btn">İleri</button>
     </div>
 
-    <!-- Fotoğraf ve yazı ekranı (2. kısım olarak gelecek) -->
-    <div id="photo-screen" class="hidden">
-        <img id="photo" src="kopek.png" alt="Prenses" width="300">
-        <p id="photo-message">EEE yanlış kısım, prenses pardon :D</p>
-        <button id="next-btn">İleri</button>
-    </div>
-
-    <!-- Oyun ekranı -->
     <div id="game-screen" class="hidden">
         <div id="game-container">
-            <div id="button-container">
-                <button id="no-button">Hayır</button>
-                <button id="yes-button">Evet</button>
-            </div>
+            <button id="no-button">Hayır</button>
+            <button id="yes-button">Evet</button>
             <p id="message">Senin enerjini çok sevdim, seni daha yakından tanımak istiyorum, mümkün mü?</p>
         </div>
     </div>
 
-    <!-- Video ekranı -->
+    <!-- Fotoğraf ve yazı ekranı (2. kısım olarak gelecek) -->
+    <div id="photo-screen" class="hidden">
+        <img id="photo" src="image.jpg" alt="Prenses" width="300">
+        <p id="photo-message">EEE yanlış kısım, prenses pardon :D</p>
+        <button id="next-btn">İleri</button>
+    </div>
+
+    <!-- YouTube video ekranı (3. kısım) -->
     <div id="video-container" class="hidden">
-        <video id="myVideo" width="560" controls>
-            <source src="SanaOzel.mp4" type="video/mp4">
-            Tarayıcınız video etiketini desteklemiyor.
-        </video>
-        <p id="accept-message">Kabul edeceğini biliyordum , instaya dönebilirsin 😊</p>
+        <!-- YouTube videosu ekleniyor -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7jRf30--RDM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p id="accept-message">Kabul edeceğini biliyordum! 😊</p>
     </div>
 
     <script src="script.js"></script>
